@@ -1,7 +1,7 @@
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-var HtmlWebpackTagsPlugin = require('html-webpack-tags-plugin');
 const WriteFIle = require('write-file-webpack-plugin');
+const vueLoaderPLugin = require('vue-loader/lib/plugin');
 
 const path = require('path');
 
@@ -16,11 +16,6 @@ module.exports = {
     output:{
         filename:"bundle.js"
     },
-    module:{
-        rules:[
-            {test: /\.hbs$/,loader: 'handlebars-loader', }
-        ]
-    },
     plugins:[
         new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
         new HtmlWebpackPlugin({
@@ -28,6 +23,27 @@ module.exports = {
             title:mode,
             template:"index.hbs"
         }),
-        new WriteFIle()
-    ]
+        new WriteFIle(),
+        new vueLoaderPLugin()
+    ],
+    module:{
+        rules:[
+            {test:  /\.hbs$/,loader: 'handlebars-loader'},
+            {test: /\.vue$/,loader:'vue-loader'},
+            { test: /\.html$/,
+                loader: 'vue-template-loader',
+                // We don't want to pass `src/index.html` file to this loader.
+                exclude: /index.html/},
+            {test: /\.css$/, use: ['style-loader', 'css-loader']},
+
+        ]
+    },
+    resolve: {
+        alias: {
+            //Todo: eliminae redudancy here
+          'vue$': 'vue/dist/vue.js',
+          'vue$': 'vue/dist/vue.esm.js',
+          'vue$': 'vue/dist/vue.common.js'
+        }
+      }
 };
