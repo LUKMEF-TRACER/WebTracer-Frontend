@@ -4,10 +4,13 @@
  */
 
 import Vue from 'vue';
-import App from './app.js'
+import App from './app.vue'
+import router from './config/router'
+require('semantic-ui-css/semantic.css');
 
 Vue.config.productionTip = false
 
   new Vue({
       render: h=>h(App),
+      router,
   }).$mount("#root")
