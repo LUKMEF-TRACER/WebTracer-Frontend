@@ -1,6 +1,6 @@
 <template>
-  <div class="ui center aligned container fluid" id="footer">
-      <div class="ui">
+  <div class="container fluid" id="footer">
+      <div class="ui center aligned container">
         <img :src="image" class="ui image large centered"/>
         <p>Non governmental organisation(NGO) promoting peace, nonviolence, social justice and sustainable development</p>
        <a href="https://facebook.com/lukmefcameroon/"><i class=" circular icon facebook blue large"></i></a>
