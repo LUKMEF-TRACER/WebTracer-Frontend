@@ -35,6 +35,22 @@ module.exports = {
                 // We don't want to pass `src/index.html` file to this loader.
                 exclude: /index.html/},
             {test: /\.css$/, use: ['style-loader', 'css-loader']},
+            {
+                test:/\.(png|jpe?g|jpg|svg|gif)$/i,
+                loader:'file-loader',
+                options:{
+                    outputPath:'images'
+                }
+            },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/,
+                use: {
+                    loader:'file-loader',
+                    options:{
+                        outputPath:'fonts'
+                    }
+                }
+            }
 
         ]
     },

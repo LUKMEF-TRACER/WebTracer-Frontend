@@ -44,6 +44,8 @@
     "write-file-webpack-plugin": "^4.5.1"
   },
   "dependencies": {
-    "vue": "^2.6.11"
+    "semantic-ui-css": "^2.4.1",
+    "vue": "^2.6.11",
+    "vue-router": "^3.1.6"
   }
 }

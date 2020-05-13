@@ -3,3 +3,21 @@
  * Place your public components here
  * example: export {default as LoginForm} from '.Login' 
  */
+
+//Layout
+
+export { default as AppHeader } from './layouts/AppHeader.vue'
+export { default as AppFooter } from './layouts/AppFooter.vue'
+
+
+//Pages
+ export { default as HomePage } from './pages/HomePage.vue'
+ export { default as ReportPage } from './pages/ReportPage.vue'
+ export { default as SignupPage } from './pages/SignupPage.vue'
+ export { default as PageNotFound } from './pages/404.vue'
+
+ //Custom Components
+ 
+
+
+ 
