@@ -1,5 +1,5 @@
 <template>
-  <div class="container fluid" id="footer">
+  <div class="container" id="footer">
       <div class="ui center aligned container">
         <img :src="image" class="ui image large centered"/>
         <p>Non governmental organisation(NGO) promoting peace, nonviolence, social justice and sustainable development</p>
@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import image from '../../assets/img/logo-footer.png';
+import image from '../../assets/img/logo-footer.png'; //TODO: Eliminate relative paths e.g import image from 'img/logo.png should work
 export default {
     name:"AppFooter",
     data: function(){
@@ -24,6 +24,6 @@ export default {
 </script>
 <style scoped>
     #footer{
-        background-color: rgba(0, 128, 0, 0.493);
+        background-color: #4e9738dc /** TODO: get a better nice color for this*/
     }
 </style>
