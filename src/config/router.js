@@ -6,24 +6,25 @@ Vue.use(Router);
 export default new Router({
     routes:[
         {
-            name:'HomePage',
+            name:'Welcome',
             path:'/',
             component: HomePage
         },
         {
-            name:'ReportPage',
+            name:'Report A Case',
             path:'/report',
             component:ReportPage
         },
         {
-            name:'SignupPage',
+            name:'SignIn',
             path:'/login',
             component:SignupPage
         },
+        /*
         {
             path: '**',
             name: '404',
             component: PageNotFound
-      }
-    ]
+      }*/   
+    ],
 })
