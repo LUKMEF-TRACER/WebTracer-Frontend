@@ -66,7 +66,7 @@ export default {
 </script>
 <style >
 	header{
-		padding: 30px 0px ;
+		padding: 35px 0px ;
 	}
 	header h1{
 		font-size: 3rem !important;
@@ -80,8 +80,9 @@ export default {
 	}
 	.block{
 		width: 100%;
+		border-radius: 10px;
 	}
 	section{
-		padding: 50px 0px;
+		padding: 45px 0px;
 	}
 </style>
