@@ -6,12 +6,21 @@
 
 <template>
 	<div>
+		<AppHeader></AppHeader>
 		<router-view class="view"></router-view>
+		<AppFooter></AppFooter>
 	</div>
 </template>
 
 <script>
+import {AppHeader, AppFooter} from './components/'
+
 export default {
+	name:'App',
+	components:{
+		 AppHeader,
+		 AppFooter,
+	}
 
 }
 </script>

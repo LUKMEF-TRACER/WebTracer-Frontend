@@ -26,6 +26,10 @@ module.exports = {
         new WriteFIle(),
         new vueLoaderPLugin()
     ],
+    watchOptions: {
+      aggregateTimeout: 200,
+      poll: 500
+    },
     module:{
         rules:[
             {test:  /\.hbs$/,loader: 'handlebars-loader'},
