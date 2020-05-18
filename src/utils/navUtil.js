@@ -1,6 +1,6 @@
 import router from '../config/router';
 export default{
-    blackList: function(blacklist=[]){
+    blacklist: function(blacklist=[]){
         var newRoutes = [];
         /* TODO: Re-implement this util to handle single passed variable and add support for case insensitivity
         if(typeof blacklist === "string" && blacklist!=''){
