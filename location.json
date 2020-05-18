@@ -1,32 +1,42 @@
 [
 {
-"name":"Adamawa","towns":[“Ngoundere”, “Tibati”, “Ngoundal”, “Meinganga”, “Banyo”]
+	"name":"Adamawa",
+	"towns":[“Ngoundere”, “Tibati”, “Ngoundal”, “Meinganga”, “Banyo”]
 },
 {
-"name":"Center","towns":[“Yaounde”, “Akonolinga”, “Bafia”, “Mbalmayo”, “Mbandjock”, “Nanga-Eboko”, “Obala”, “Soa”, “Sa’a”]
+	"name":"Center",
+	"towns":["Yaounde", "Akonolinga", "Bafia", "Mbalmayo", "Mbandjock", "Nanga-Eboko", "Obala", "Soa", "Sa’a"]
 },
 {
-"name":"East","towns":[“Bertoua”, “Yokadouma”, “Garoua-Boulai”, “Belabo”, “Batouri”, “Abong-Mbang”]
+	"name":"East",
+	"towns":["Bertoua", "Yokadouma", "Garoua-Boulai", "Belabo", "Batouri", "Abong-Mbang"]
 },
 {
-"name":"Far North","towns":[“Maroua”, “Yagoua”, “Mora”, “Mokolo”, “Maga”, “Kousseri”, “Guidigis”, “Bogo”, “Blangoua”]
+	"name":"Far North",
+	"towns":["Maroua", "Yagoua", "Mora", "Mokolo", "Maga", "Kousseri", "Guidigis", "Bogo", "Blangoua", "Gazawa"]
 },
 {
-"name":"Littoral","towns":[“Douala”, “Edea”, “Loum”, “Manjo”, “Mbanga”, ”Melong”, “Njombe”, “Nkongsamba”, “Penja”, “Souza”]
+	"name":"Littoral",
+	"towns":["Douala", "Edea", "Loum", "Manjo", "Mbanga", "Melong", "Njombe", "Nkongsamba", "Penja", "Souza"]
 },
 {
-"name":"North","towns":[“Garoua”, “Touboro”, “Cheboa”, “Pitoa”, “Lagdo”, “Guide”, “Figuil”]
+	"name":"North",
+	"towns":["Garoua", "Touboro", "Cheboa", "Pitoa", "Lagdo", "Guide", "Figuil"]
 },
 {
-"name":"North West","towns":[“Bamenda”, “Bafut”, “Bali”, “Kumbo”, “Ndop”, “Akum”, “Santa”, “Nkambe”, “Oku”, “Wum”, “Bambili”, “Batibo”, Mendakwe”, “Mbengwi”, “Baba”, “babungo”, “Bafanji”, “Bafochu”, “Fundong”]
+	"name":"North West",
+	"towns":["Bamenda", "Bafut", "Bali", "Kumbo", "Ndop", "Akum", "Santa", "Nkambe", "Oku", "Wum", "Bambili", "Batibo", "Mendakwe", "Mbengwi", "Baba", "Babungo", "Bafanji", "Bafochu", "Fundong"]
 },
 {
-"name":"West","towns":[“Bafoussam”, “Bafang”, “Bandjoun”, “Bangante”, “Dschang”, “Foumban”, “Foumbot”, “Kekem”, “Magba”, Mbouda”]
+	"name":"West",
+	"towns":["Bafoussam", "Bafang", "Bandjoun", "Bangante", "Dschang", "Foumban", "Foumbot", "Kekem", "Magba", "Mbouda"]
 },
 {
-"name":"South","towns":[“Ebolowa”, “Sangmelima”, “Kribi”, “Ambam”]
+	"name":"South",
+	"towns":["Ebolowa", "Sangmelima", "Kribi", "Ambam", "Kye-Ossi", "Lolodorf", "Campo", "Zoatele", "Mintom"]
 },
 {
-"name":"South West","towns":[“Buea”, ”Munya”, ”Kumba”, ”Mutengene”, ”Tiko”, ”Limbe”, ”Idenau”. ”Tole”, ”Mamfe”, “Muyuka”, “Tombel”, “Bangem”, “Eyumojok”]
+	"name":"South West",
+	"towns":["Buea", "Munya", "Kumba", "Mutengene", "Tiko", "Limbe", "Idenau", "Tole", "Mamfe", "Muyuka", "Tombel", "Bangem", "Eyumojok"]
 }
 ]
