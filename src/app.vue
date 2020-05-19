@@ -5,9 +5,9 @@
  -->
 
 <template>
-    <div>
+    <div class="container ui">
         <AppHeader :routes=routes></AppHeader>
-        <router-view></router-view>
+        <router-view :id="'main'"></router-view>
         <AppFooter></AppFooter>
     </div>
 </template>
@@ -25,3 +25,8 @@ export default {
     }
 }
 </script>
+<style scoped>
+    #main{
+        min-height: 77vh;
+    }
+</style>
