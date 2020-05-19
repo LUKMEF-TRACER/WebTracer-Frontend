@@ -2,6 +2,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WriteFIle = require('write-file-webpack-plugin');
 const vueLoaderPLugin = require('vue-loader/lib/plugin');
+const copyPlugin = require('copy-webpack-plugin')
 
 const path = require('path');
 
@@ -24,7 +25,12 @@ module.exports = {
             template:"index.hbs"
         }),
         new WriteFIle(),
-        new vueLoaderPLugin()
+        new vueLoaderPLugin(),
+        new copyPlugin({
+            patterns:[{
+                from:'./workers.js', to:'workers.js'
+            }]
+        })
     ],
     module:{
         rules:[
