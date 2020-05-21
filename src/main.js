@@ -9,9 +9,10 @@ import router from './config/router'
 import { nav } from "./utils";
 
 require('semantic-ui-css/semantic.css');
-
+import InitSw from './config/InitSW';
 Vue.config.productionTip = false
 Vue.prototype.$nav = nav // global nav provides option to filter routes to be outputted
+InitSw.startRegistration();
   new Vue({
       render: h=>h(App),
       router
