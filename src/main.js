@@ -7,9 +7,11 @@ import Vue from 'vue';
 import App from './app.vue'
 import router from './config/router'
 import { nav } from "./utils";
-
 require('semantic-ui-css/semantic.css');
 import InitSw from './config/InitSW';
+window.$ = window.jQuery = require('jquery') // required for semanticUI to work
+require('semantic-ui-css/semantic.min.css');
+require('semantic-ui-css/semantic');
 Vue.config.productionTip = false
 Vue.prototype.$nav = nav // global nav provides option to filter routes to be outputted
 InitSw.startRegistration();
