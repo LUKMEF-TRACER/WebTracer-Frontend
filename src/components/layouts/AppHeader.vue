@@ -1,13 +1,13 @@
-<template>
+ <template>
     <div class="ui grid padded stackable">
         <div class="row">
-            <div class="">
+            <div>
                 <img :src="image" class="image tiny ui centered avatar"/>
             </div>
             <div class="fifteen wide column">
-                <div class="ui top attached tabular menu">
+                <div class="ui top attached tabular menu inverted">
                     <div v-for="route in routes" :key="route.path">
-                     <router-link :to="route.path" :class="[getClass.includes(route.name) ? 'active red' : '','item']">{{ route.name }}</router-link>
+                     <router-link :to="route.path" :class="[getClass(route.name)? 'active blue' : '','item']">{{ route.name }}</router-link>
                     </div>
                 </div>     
             </div>
@@ -21,16 +21,18 @@ export default {
     name:'AppHeader',
     data:function(){
         return{
-            image:image,
-            routes:this.$router.options.routes //Dynamically get all routes to use in link tags(router-link element).
+            image:image
+     }
+    } ,
+    methods:{
+        getClass: function(param){
+            if(param == this.$route.name){
+               return true;
+            }
         }
     },
-     computed:{
-         // this comp func rsponsible to check if current route matches that of our links
-        getClass(){            
-            return this.$route.name;
-        }
+    props:{
+        routes:{}
     }
-
 }
 </script>
