@@ -6,12 +6,13 @@
 import Vue from 'vue';
 import App from './app.vue'
 import router from './config/router'
-import InitSw from './config/InitSW';
+import { nav } from "./utils";
+
 require('semantic-ui-css/semantic.css');
-InitSw.startRegistration();
+
 Vue.config.productionTip = false
 Vue.prototype.$nav = nav // global nav provides option to filter routes to be outputted
   new Vue({
       render: h=>h(App),
-      router,
+      router
   }).$mount("#root")

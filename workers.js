@@ -12,7 +12,6 @@ addEventListener('activate',function(event){
     
 })
 //Todo: fetch event return error
-/*
 addEventListener('fetch',function(event){
         event.respondWith(
           caches.match(event.request)
@@ -26,4 +25,3 @@ addEventListener('fetch',function(event){
           ))
       
 })
-*/
