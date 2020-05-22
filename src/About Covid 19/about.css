@@ -69,7 +69,22 @@ p {
   margin: auto auto;
 }
 
-button:focus{
+ a {
+  color: #108f29;
+}
+
+a:hover{
+  font-weight: bolder;
+  font-size: larger;
+  text-decoration: none;
+  color: #108f29;
+}
+
+ button:focus{
     border: none;
-    display: none;
+    text-decoration: none;
+}
+
+button:active{
+  border: none;
 }

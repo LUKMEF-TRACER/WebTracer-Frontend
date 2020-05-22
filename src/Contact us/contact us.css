@@ -1,6 +1,7 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     justify-content: center;
+    background-color: #2f3a32;
 }
 .page-title{
     color: #116321;
@@ -21,6 +22,7 @@ p{
     border-right: #116321 5px solid; */
     margin: auto auto;
     box-shadow: 0px 0px 20px 1px #116321;
+    background-color: #fff;
 }
 
 /* .container{
