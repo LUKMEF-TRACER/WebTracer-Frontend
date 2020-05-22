@@ -20,17 +20,17 @@
 					<div class="two fields">
 					  <div class="field">
 			      	<label>Region</label>
-				       <select class="ui fluid dropdown">
+				       <select v-model='region' @change='onChange' class="ui fluid dropdown">
 				        <option value="">Region</option>
-						    <option value="AL">Alabama</option>
+						    <option v-for='(elmt,index) in regions' :value="elmt">{{elmt}}</option>
 		    
 		      		</select>
 				    </div>
 					  <div class="field">
 				      <label>Town</label>
-				       <select class="ui fluid dropdown">
+				       <select v-model='town' class="ui fluid dropdown" :disabled="disable">
 				        <option value="">Town</option>
-						    <option value="AL">Alabama</option>
+						    <option v-for='(elmt,index) in towns' :value="elmt">{{elmt}}</option>
 		    
 		      		</select>
 				    </div>
@@ -55,7 +55,7 @@
 		    </div>
 			  <div class="field">
 			    <label>WHERE</label>
-			    <textarea v-model='where' spellcheck="true"></textarea>
+			    <textarea v-model='where' spellcheck="true" rows="2"></textarea>
 			  </div>
 
 			  <div class="">
@@ -67,13 +67,16 @@
 </template>
 
 <script>
-// import locale from './locales/location.json';
+import locale from '../../locales/location.json';
 export default {
     name:'ReportPage',
 
 	data: () => ({
-		region: [],
+		disable: true,
+		regions: [],
+		region:'',
 		tel: '',
+		towns: [],
 		town: '',
 		sympt:[],
 		when: null,
@@ -81,16 +84,35 @@ export default {
 	symptoms: ['dry cough','fever','chest pain','difficulty breathing','headache','conjunctivitis','a rash on skin'],
 	}),
 	methods: {
-	 //  getJsonFile (index) {
-		//   this.region = require('./locales/locations.json')
-		//   console.log(this.region)
-		// }
-	}
+		onChange(){
+        if (this.region != '') {
+
+            this.disable = false;
+            let region = '';
+
+            for (var i = 0; i <= 10; i++ ){
+							region = locale[i].name
+							if (this.region == region) {
+								console.log('changed')
+								this.towns = locale[i].towns
+							}
+							
+						}
+        }
+   	},
+    
+	},
+	created(){
+		for (var i = 0; i <= 10; i++ ){
+				this.regions.push(locale[i].name)
+			}
+		console.log(locale[0].towns);
+  }
 };
 </script>
 <style >
 	header{
-		padding: 35px 0px ;
+		padding: 15px 0px ;
 	}
 	header h1{
 		font-size: 3rem !important;
@@ -107,6 +129,6 @@ export default {
 		border-radius: 20px !important;
 	}
 	section{
-		padding: 45px 0px;
+		padding: 15px 0px;
 	}
 </style>
