@@ -33,8 +33,8 @@ body{
 }
 
 .image-holder{
-    height: 300px;
-    width: 300px;
+    height:200px;
+    width:200px;
     border: 3px solid #ffffff;
     border-radius: 100%;
     object-fit: cover;
@@ -45,9 +45,22 @@ body{
     height: 100%;
     width: 100%;
     object-fit: contain;
-    border-radius: 50%;
+    border-radius: 100%;
 }
 
 /* .e-404{
     font-size: 50px;
 } */
+
+div > p > a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+
+div > p > a:hover{
+    color: #ffffff;
+    font-size: larger;
+    font-weight: bolder;
+}

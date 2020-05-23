@@ -21,7 +21,7 @@ body {
 .box-heading {
   font-weight: bold;
   text-transform: capitalize;
-  font-size: 25px;
+  font-size: 20px;
   padding: 10px;
   color: #116321;
   text-decoration: underline;
@@ -80,11 +80,23 @@ a:hover{
   color: #108f29;
 }
 
+button{
+  width: fit-content;
+  color: #116321;
+}
+
+button:hover{
+  color: #fff;
+  width: fit-content;
+  background-color: #116321;
+}
+
  button:focus{
-    border: none;
-    text-decoration: none;
+    width: fit-content;
+    outline: none !important;
 }
 
 button:active{
-  border: none;
+  outline: none;
+  box-shadow: none;
 }

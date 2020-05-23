@@ -37,26 +37,28 @@
         integrity="sha384-wvfXpqpZZVQGK6TAh6PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <link rel="stylesheet" href="about.css">
+    <script src="toggle.js"></script>
+
 </head>
 
 <body>
-
-
     <section>
         <div class="">
             <div class="py-3"></div>
-            <div class="page-title">ABOUT COVID - 19</div>
+            <div class="page-title">ABOUT COVID-19</div>
             <div class="py-2"></div>
             <div class="body-container">
                 <div class="text-box shadow">
-                    <div class="box-heading">What is COVID - 19?</div>
+                    <div class="box-heading">
+                        <h2>What is COVID - 19?</h2>
+                    </div>
                     <div class="content">
                         <p> Corona virus discovered in 2019 is as its name implies is a disease caused by a
                             new corona virus strain. This disease originated from Wuhan, China and has spread rapidly
                             across
                             the globe with a death toll ever so rising.
                             <a href="">See more</a> of what is known about the functioning and structure of this virus,
-                            <button type="button" data-toggle="collapse" class="collapsible"
+                            <button type="button" onclick="myFunction()" id="toggle" data-toggle="collapse" class="collapsible"
                                 data-target="#more-1">More</button>
                         </p>
                     </div>
@@ -65,13 +67,17 @@
                     <div id="more-1" class="more-content collapse ">
                         <p>One suffering this disease may display the following symptoms for different people react
                             differently to the disease.
-                           <p> <h6>Most common symptoms.</h6> </p>
+                            <p>
+                                <h6>Most common symptoms.</h6>
+                            </p>
                             <ul>
                                 <li>fever</li>
                                 <li>dry cough</li>
                                 <li>tiredness</li>
                             </ul>
-                           <p> <h6>Less common symptoms</h6></p>
+                            <p>
+                                <h6>Less common symptoms</h6>
+                            </p>
                             <ul>
                                 <li>aches and pains</li>
                                 <li>sore throat</li>
@@ -81,7 +87,9 @@
                                 <li>loss of taste or smell</li>
                                 <li>a rash on skin, or discolouration of fingers or toes</li>
                             </ul>
-                            <p> <h6>Serious symptoms</h6></p>
+                            <p>
+                                <h6>Serious symptoms</h6>
+                            </p>
                             <ul>
                                 <li>difficulty breathing or shortness of breath</li>
                                 <li>chest pain or pressure</li>
@@ -95,7 +103,7 @@
                     <div class="content">
                         <p>Practicing simple hygiene will help greatly in preventing the spread and contraction of this
                             virus.
-                            <button type="button" data-toggle="collapse" class="collapsible"
+                            <button type="button" onclick="myFunction1()" id="toggle1" data-toggle="collapse" class="collapsible"
                                 data-target="#more-2">More</button>
                         </p>
                     </div>
@@ -137,7 +145,7 @@
                             of people who have recovered and are 100% healthy now after being greatly ill with corona.
                             You might as well just be one of them. <br>
                             And if that is not the case, do as the authorities and your health advisor instructs.
-                            <!-- <button type="button" data-toggle="collapse" class="collapsible"
+                            <!-- <button type="button" onclick="myFunction()" id="toggle" data-toggle="collapse" class="collapsible"
                                 data-target="more-3">More</button> -->
                         </p>
                     </div>
@@ -157,7 +165,7 @@
                             situation.
                             Go here to view <a href="">statistics of Cameroon</a> with respect to this virus and also <a
                                 href="">worldwide</a> .
-                            <!-- <button type="button" data-toggle="collapse" class="collapsible"
+                            <!-- <button type="button" onclick="myFunction()" id="toggle" data-toggle="collapse" class="collapsible"
                                 data-target="#more-4">More</button> -->
                         </p>
                     </div>
@@ -174,7 +182,6 @@
             </div>
         </div>
     </section>
-
 </body>
 
 </html>
